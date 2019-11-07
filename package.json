@@ -1,0 +1,14 @@
+{
+  "name": "elm-in-jsdom",
+  "version": "0.0.0-NEVER",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "elm make --output=main.js --optimize src/Main.elm && node ."
+  },
+  "devDependencies": {
+    "jsdom": "^15.2.1",
+    "jsdom-global": "^3.0.2"
+  }
+}
