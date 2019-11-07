@@ -8,7 +8,7 @@
     "start": "elm make --output=main.js --optimize src/Main.elm && node ."
   },
   "devDependencies": {
-    "jsdom": "^15.2.1",
-    "jsdom-global": "^3.0.2"
+    "nodom": "^2.4.0",
+    "redom": "^3.24.2"
   }
 }

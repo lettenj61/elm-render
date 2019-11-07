@@ -1,6 +1,6 @@
-# Elm in JSDOM
+# Elm in RE:DOM
 
-See what Elm renders via JSDOM.
+See what Elm renders via RE:DOM.
 
 
 ## Requirements

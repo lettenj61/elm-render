@@ -1,11 +1,14 @@
-require('jsdom-global')();
+const { Document, SVGElement } = require('nodom');
+global.document = new Document();
+global.SVGElement = SVGElement;
+
+const redom = require('redom');
 const { Elm } = require('./main');
 
-document.body.innerHTML = `<main id="elm"></main>`;
+redom.mount(document.body, redom.el('main', { id: 'elm' }));
 
 Elm.Main.init({
   node: document.getElementById('elm')
 });
 
-const html = document.body.innerHTML;
-console.log(html);
+console.log(document.body.outerHTML);
