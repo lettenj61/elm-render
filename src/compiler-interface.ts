@@ -29,7 +29,7 @@ export default function run(elmBinary: string, source: string): {
 
 export function prepareElmCommand(elmBinary: string, source: string): ElmMakeOptions {
   const workingDirectory = fs.mkdtempSync(
-    path.join(os.tmpdir(), 'elm-render')
+    path.join(os.tmpdir(), 'elm-render-')
   );
   const sourceDirectory = path.join(workingDirectory, 'src');
   const elmScript = path.basename(source);
