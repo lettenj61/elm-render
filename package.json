@@ -9,6 +9,10 @@
   "bin": {
     "elm-render": "index.js"
   },
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/lettenj61/elm-render.git"

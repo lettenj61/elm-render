@@ -1,5 +1,3 @@
-lib/compiler-interface.js
-lib/*.json
 elm-stuff/
 node_modules/
 
