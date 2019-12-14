@@ -1,5 +1,6 @@
-node_modules/
+lib/compiler-interface.js
+lib/*.json
 elm-stuff/
+node_modules/
 
-main.js
 yarn.lock

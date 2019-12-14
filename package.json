@@ -1,14 +1,20 @@
 {
-  "name": "elm-in-jsdom",
-  "version": "0.0.0-NEVER",
+  "name": "elm-render",
+  "version": "0.1.0",
   "main": "index.js",
-  "license": "UNLICENSED",
+  "license": "MIT, Apache-2.0",
   "private": true,
   "scripts": {
-    "start": "elm make --output=main.js --optimize src/Main.elm && node ."
+    "build": "tsc -p ."
   },
-  "devDependencies": {
+  "dependencies": {
+    "cac": "^6.5.3",
     "nodom": "^2.4.0",
     "redom": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "@zeit/ncc": "^0.20.5",
+    "typescript": "^3.7.3"
   }
 }

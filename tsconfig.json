@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "lib",
+    "resolveJsonModule": true,
+    "strict": false,
+    "target": "ES2015"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
