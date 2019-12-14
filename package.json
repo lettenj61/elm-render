@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT, Apache-2.0",
-  "private": true,
   "scripts": {
     "build": "tsc -p ."
+  },
+  "bin": {
+    "elm-render": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lettenj61/elm-render.git"
   },
   "dependencies": {
     "cac": "^6.5.3",
