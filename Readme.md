@@ -1,6 +1,6 @@
-# Elm in RE:DOM
+# elm-render
 
-See what Elm renders via RE:DOM.
+See what Elm renders.
 
 
 ## Requirements
@@ -9,9 +9,25 @@ See what Elm renders via RE:DOM.
 * Node.js
 
 
-## Usage
+## Installation / Usage
 
 ```sh
-$ npm i
-$ npm start
+$ elm-render [--elm-binary=/path/to/your/elm] <..sources>
+```
+
+Example:
+
+```sh
+$ cat Hello.elm
+module Hello exposing (..)
+
+import Html
+
+main =
+  Html.text "Hello, world!"
+
+$ npm init -y
+$ npm install elm-render --save
+$ npx elm-render Hello.elm
+# Hello, world!
 ```
